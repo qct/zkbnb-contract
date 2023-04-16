@@ -18,10 +18,7 @@ dotenv.config();
 const config: HardhatUserConfig = {
   etherscan: {
     // Your API key for BSC. Obtain one at https://bscscan.com/
-    apiKey: {
-      bscTestnet: process.env.BSCSCAN_APIKEY || '',
-      bsc: process.env.BSCSCAN_API_KEY || '',
-    },
+    apiKey: process.env.BSCSCAN_API_KEY || '',
   },
   solidity: {
     version: '0.8.17',
